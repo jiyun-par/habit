@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
 * {
 	box-sizing: border-box;
+	font-family: "Fredoka", sans-serif;
+}
+body {
+	background-color: rgb(219, 143, 143);
 }
 
 button {
@@ -11,23 +16,36 @@ button {
 .navbar {
 	font-size: 2rem;
 	padding: 1em;
-	background-color: blanchedalmond;
-}
-
-.add-input {
-	font-size: 2rem;
-	margin: 0.5em 0.2em;
-}
-.add-button {
-	height: 100%;
-	font-size: 1.5rem;
-	padding: 0.3em 0.5em;
-	background-color: green;
+	background-color: rgb(48, 32, 7);
+	text-align: center;
 	color: #fff;
 }
 
+.add-input {
+	border: none;
+	background-color: rgb(148, 102, 109);
+	width: 14.5em;
+	height: 2em;
+	font-size: 1.5rem;
+	text-indent: 1rem;
+	margin: 0.5em 0.2em;
+}
+.add-input::placeholder {
+	color: rgba(255, 255, 255, 0.438);
+}
+
+.add-button {
+	width: 2em;
+	margin: 0;
+	vertical-align: 2%;
+	height: 100%;
+	font-size: 1.5rem;
+	padding: 0.3em 0.5em;
+	background-color: transparent;
+}
+
 .navbar-logo {
-	color: green;
+	color: rgb(58, 58, 58);
 	margin-right: 0.5em;
 }
 
@@ -39,54 +57,61 @@ button {
 	height: 2.5rem;
 	line-height: 2.5rem;
 	margin-left: 0.2em;
-	background-color: green;
 	color: #fff;
 	border-radius: 50%;
+}
+ul {
+	padding: 0;
 }
 
 /* habit button */
 .habit-button {
-	font-size: 2.5rem;
-	margin: 0 0.1em;
+	font-size: 1.5rem;
+	margin: 0;
 	background-color: transparent;
 }
 
 .habit-button:hover {
 	opacity: 0.8;
 }
-.habit-increase,
+.habit-increase {
+	color: rgb(32, 128, 218);
+}
+
 .habit-decrease {
-	color: goldenrod;
+	color: rgb(218, 32, 32);
 }
 .habit-delete {
-	font-size: 2rem;
-	color: darkred;
+	font-size: 1.5rem;
+	color: rgb(104, 104, 104);
 }
 
 /* list style */
 .habit {
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	padding: 0.5em;
 	list-style: none;
+	color: rgb(235, 230, 229);
 }
 .habit-count {
+	vertical-align: 12%;
 	display: inline-block;
 	text-align: center;
-	font-size: 2rem;
-	width: 2.5rem;
-	height: 2.5rem;
-	line-height: 2.5rem;
+	font-size: 1rem;
+	width: 1.8rem;
+	height: 1.8rem;
+	line-height: 1.8rem;
 	margin-left: 0.2em;
 	margin-right: 0.5em;
-	background-color: darkseagreen;
+	background-color: rgb(48, 32, 7);
 	color: #fff;
 	border-radius: 50%;
 }
 
 .habits-reset {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	padding: 0.2em 1em;
-	background-color: green;
+	background-color: rgba(76, 85, 76, 0.342);
 	color: #fff;
 	margin-left: 0.5em;
 }

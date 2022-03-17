@@ -19,14 +19,9 @@ const HabitAddForm = memo((props) => {
 
 	return (
 		<form ref={formRef} className="addform" onSubmit={onSubmit}>
-			<input
-				ref={inputRef}
-				type="text"
-				className="add-input"
-				placeholder="Add your habit"
-			/>
+			<input ref={inputRef} maxLength="10" type="text" className="add-input" placeholder="Add your habit" />
 			<button type="submit" className="add-button">
-				Add
+				<i className="fa-solid fa-plus"></i>
 			</button>
 		</form>
 	);
