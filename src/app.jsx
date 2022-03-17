@@ -11,8 +11,8 @@ const App = (props) => {
 	const [habits, setHabits] = useState(getHabitlist);
 
 	const setStorage = (habitList) => {
-		const list = JSON.stringify(habitList);
-		localStorage.setItem("habitlist", list);
+		// const list = JSON.stringify(habitList);
+		// localStorage.setItem("habitlist", list);
 		setHabits((habits) => habitList);
 	};
 
