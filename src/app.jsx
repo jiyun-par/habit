@@ -4,15 +4,17 @@ import Navbar from "./components/navbar";
 import React, { useState, useCallback } from "react";
 
 const App = (props) => {
-	// !localStorage.getItem("habitlist") && localStorage.setItem("habitlist", []);
-	// let getHabitlist = JSON.parse(localStorage.getItem("habitlist"));
-	let getHabitlist = [];
+	let getHabitlist;
+	!localStorage.getItem("habitlist") && localStorage.setItem("habitlist", []);
+	if (localStorage.getItem("habitlist")) {
+		getHabitlist = JSON.parse(localStorage.getItem("habitlist"));
+	}
 
 	const [habits, setHabits] = useState(getHabitlist);
 
 	const setStorage = (habitList) => {
-		// const list = JSON.stringify(habitList);
-		// localStorage.setItem("habitlist", list);
+		const list = JSON.stringify(habitList);
+		localStorage.setItem("habitlist", list);
 		setHabits((habits) => habitList);
 	};
 
